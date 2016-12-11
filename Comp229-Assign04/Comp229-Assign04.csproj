@@ -81,6 +81,9 @@
     <Content Include="Assets\bootstrap\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="Assets\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="data\Assign04.json" />
+    <Content Include="data\Assign04_2.json" />
+    <Content Include="data\Assign04_3.json" />
+    <Content Include="data\Assign04_5.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

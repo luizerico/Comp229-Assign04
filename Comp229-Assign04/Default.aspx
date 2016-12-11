@@ -30,10 +30,17 @@
     </p>
     <asp:Repeater runat="server" ID="rptResults" ItemType="Comp229_Assign04.Models.Personas">
         <ItemTemplate>
-            <asp:Literal ID="Literal6" runat="server" Text='<%# Item.name %>' ></asp:Literal>
-            <br />
+            <asp:Literal ID="Literal6" runat="server" Text='<%# Item.name %>' ></asp:Literal><br />            
             <asp:Literal ID="Literal8" runat="server" Text='<%# Item.faction %>' ></asp:Literal><br />
-            <asp:Image ID="Image1" runat="server" ImageUrl='<%# Item.imageurl %>' /><br />" />
+            <%-- <asp:Image ID="Image1" runat="server" ImageUrl='<%# Item.imageurl %>' /><br />" />--%>
         </ItemTemplate>
     </asp:Repeater>
+
+
+    
+    <asp:ObjectDataSource runat="server" ID="ObjectDataSource1" DataObjectTypeName="Comp229_Assign04.Models.Personas" InsertMethod="Add" SelectMethod="GetAll" TypeName="Comp229_Assign04.Handlers.PersonaHandler">
+        <SelectParameters>
+            <asp:Parameter Name="ID" Type="Int32" DefaultValue="0"></asp:Parameter>
+        </SelectParameters>
+    </asp:ObjectDataSource>
 </asp:Content>

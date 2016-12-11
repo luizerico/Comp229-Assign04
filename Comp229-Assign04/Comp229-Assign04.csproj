@@ -99,11 +99,15 @@
     <Content Include="Assets\bootstrap\js\npm.js" />
     <Content Include="Assets\general.css" />
     <Content Include="Assets\jquery\jquery-3.1.1.min.js" />
+    <Content Include="Global.asax" />
     <Content Include="Web.config" />
     <Content Include="Default.aspx" />
     <Content Include="Update.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
     <Compile Include="Handlers\PersonasHandler.cs" />
     <Compile Include="Models\Personas.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

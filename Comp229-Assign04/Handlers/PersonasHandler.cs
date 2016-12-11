@@ -42,8 +42,7 @@ namespace Comp229_Assign04.Handlers
 
         public void Remove(string name)
         {
-            Personas ptemp = new Personas();
-
+            //Personas ptemp = new Personas();
             personas.Remove(personas.Find(x => x.name == name));
         }
 
@@ -51,7 +50,23 @@ namespace Comp229_Assign04.Handlers
         {
             return personas[ID];
         }
-       
+
+        public int GetIndex(string name)
+        {
+            return personas.FindIndex(x => x.name == name);
+        }
+
+        public Personas GetPersona(string name)
+        {
+            return personas.Find(x => x.name == name);
+        }
+
+        public void BindtoForm()
+        {
+
+        }
+
+        
 
     }
 }

@@ -9,9 +9,10 @@ namespace Comp229_Assign04.Models
     {
         public string name { get; set; }
         public string faction { get; set; }
-        public string rank { get; set; }
+        public int rank { get; set; }
         // Using this variable with uppercase because base is a reserved word and is not allowed to use it. 
-        public string Base { get; set; }
+        public int Base { get; set; }
+        public int size { get; set; }
         public string deploymentZone { set; get; }
 		public string[] traits { set; get; }
 		public string[] types { set; get; }

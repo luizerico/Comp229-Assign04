@@ -9,8 +9,17 @@
             <a href="/Model.aspx?personaid=<%# Item.name %>">
                 <div class="card" style="background-image: url('<%# Item.imageurl %>');">
                 
-                <asp:Literal ID="Literal6" runat="server" Text='<%# Item.name %>' ></asp:Literal><br />            
+                <h4 style="text-align:center;"><asp:Literal ID="Literal6" runat="server" Text='<%# Item.name %>' ></asp:Literal></h4>         
                 <asp:Literal ID="Literal8" runat="server" Text='<%# Item.faction %>' ></asp:Literal><br />
+                <asp:Literal ID="Literal1" runat="server" Text='<%# Item.rank %>' ></asp:Literal><br />                      
+                <asp:Literal ID="Literal3" runat="server" Text='<%# Item.Base %>' ></asp:Literal><br />                      
+                <asp:Literal ID="Literal2" runat="server" Text='<%# Item.size %>' ></asp:Literal><br />
+
+                <asp:Literal ID="Literal4" runat="server" Text='<%# Item.mobility %>' ></asp:Literal><br />                      
+                <asp:Literal ID="Literal5" runat="server" Text='<%# Item.resiliance %>' ></asp:Literal><br />                      
+                <asp:Literal ID="Literal7" runat="server" Text='<%# Item.willpower %>' ></asp:Literal><b></b>
+                <asp:Literal ID="Literal9" runat="server" Text='<%# Item.wounds %>' ></asp:Literal><br />
+
                 <%-- <asp:Image ID="Image1" runat="server" ImageUrl='<%# Item.imageurl %>' /><br />" />--%>
                 </div>
              </a>

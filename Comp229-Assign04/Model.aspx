@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/General.Master" AutoEventWireup="true" CodeBehind="Update.aspx.cs" Inherits="Comp229_Assign04.WebForm2" EnableEventValidation="false" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/General.Master" AutoEventWireup="true" CodeBehind="Model.aspx.cs" Inherits="Comp229_Assign04.WebForm2" EnableEventValidation="false" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
@@ -76,9 +76,8 @@
             <div class="form-group">
             </div>
             <div class="form-group">
-                <asp:LinkButton runat="server" Text="Insert" OnClick="SaveButton_Click" ID="InsertButton" CausesValidation="False" />
-                &nbsp;
-                <asp:LinkButton runat="server" Text="Cancel" CommandName="Cancel" ID="InsertCancelButton" CausesValidation="False" />
+               
+                <asp:Button runat="server" Text="Cancel" onClick="InsertCancelButton_Click" ID="InsertCancelButton" CausesValidation="False" CssClass="btn btn-default"/>
                 <asp:Button runat="server" ID="button_submit" Text="Submit" OnClick="SaveButton_Click" CssClass="btn btn-default" />
             </div>
 

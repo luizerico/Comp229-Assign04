@@ -19,16 +19,16 @@ namespace Comp229_Assign04
            
             PersonaHandler p001 = new PersonaHandler();
 
-            p001.Read("\\data\\Assign04_2.json");
+            p001.Read("\\data\\Assign04_5.json");
 
 
             rptResults.DataSource = p001.personas;
             rptResults.DataBind();
            
-            //Literal6.Text = p001.personas.Count().ToString();
-            //p001.Remove("Araugh");
-            //Literal7.Text = p001.personas.Count().ToString();
-            p001.Write("\\data\\Assign04_3.json");
+            // Literal6.Text = p001.personas.Count().ToString();
+            // p001.Remove("Araugh");
+            // Literal7.Text = p001.personas.Count().ToString();
+            // p001.Write("\\data\\Assign04_3.json");
 
         }
     }

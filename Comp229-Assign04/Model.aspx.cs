@@ -21,15 +21,18 @@ namespace Comp229_Assign04
 
             
                 if (Request.QueryString["personaid"] != null) {
-                    pindex = Int32.Parse(Request.QueryString["personaid"]);
+                    pindex = p001.GetIndex(Request.QueryString["personaid"]);
                     if (pindex < p001.personas.Count)
                     {
                         if (!Page.IsPostBack)
                         {
                             BindToForm(p001.personas[pindex]);
+                            button_submit.Text = "Update";
+                        }else
+                        {
+                            button_submit.Text = "Add";
                         }
                     }
-                Literal1.Text = pindex.ToString();
             }
 
             //ObjectDataSource2.SelectParameters.Add("ID", Request.QueryString["personaid"]);
@@ -77,23 +80,24 @@ namespace Comp229_Assign04
         }
 
         protected void SaveButton_Click(object sender, EventArgs e)
-        {
-            Personas pnew;
-           
+        {           
             if (pindex == -1) {
-                Literal1.Text = nameTextBox.Text;
-                pnew = new Personas();
+                Personas pnew = new Personas();
                 BindFromForm(pnew);
                 p001.personas.Add(pnew);
             } else
-            {
-                pnew = p001.personas[pindex];             
-                BindFromForm(pnew);
-                Literal2.Text = nameTextBox.Text + "---" + pnew.name;
+            {           
+                BindFromForm(p001.personas[pindex]);
             }
 
             p001.Write("\\data\\Assign04_5.json");
+            Server.Transfer("~/Default.aspx");
             
+        }
+
+        protected void InsertCancelButton_Click(object sender, EventArgs e)
+        {
+            Server.Transfer("~/Default.aspx");
         }
     }
 }

@@ -28,10 +28,10 @@
                             <img src="/resources/images/survey-icon-24.gif" style="margin-top: -5px;" />
                         </a>
                         <ul class="nav navbar-nav">
-                            <li><a href="/home.aspx">Home</a></li>
-                            <li><a href="/student.aspx">Students</a></li>
-                            <li><a href="/course.aspx">Courses</a></li>
-                            <li><a href="/aboutus.aspx">About us</a></li>
+                            <li><a href="/Default.aspx">Models</a></li>
+                            <li><a href="/Model.aspx">Add New Model</a></li>
+
+                            <li><a href="/Aboutus.aspx">About Us</a></li>
                         </ul>
                     </div>
                 </div>
@@ -49,7 +49,7 @@
     <div id="footer">
         <div class="container-fluid">
             <div class="row text-center">
-                <p><a href="/aboutus.aspx">2017. College Admin System</a></p>
+                <p><a href="/aboutus.aspx">2017. WraithGods Game</a></p>
             </div>
         </div>
     </div>

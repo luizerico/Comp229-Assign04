@@ -238,22 +238,13 @@ namespace Comp229_Assign04 {
         protected global::System.Web.UI.WebControls.TextBox imageurlTextBox;
         
         /// <summary>
-        /// InsertButton control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton InsertButton;
-        
-        /// <summary>
         /// InsertCancelButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton InsertCancelButton;
+        protected global::System.Web.UI.WebControls.Button InsertCancelButton;
         
         /// <summary>
         /// button_submit control.

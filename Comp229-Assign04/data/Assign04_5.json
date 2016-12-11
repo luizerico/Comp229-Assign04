@@ -595,5 +595,23 @@
     "actions": null,
     "specialabilities": null,
     "imageurl": "3"
+  },
+  {
+    "name": "1234123413411234",
+    "faction": "1",
+    "rank": 1,
+    "Base": 1,
+    "size": 1,
+    "deploymentZone": "1",
+    "traits": null,
+    "types": null,
+    "defenseChart": null,
+    "mobility": 1,
+    "willpower": 1,
+    "resiliance": 1,
+    "wounds": 1,
+    "actions": null,
+    "specialabilities": null,
+    "imageurl": "1"
   }
 ]
